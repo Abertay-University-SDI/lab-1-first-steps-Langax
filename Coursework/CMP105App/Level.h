@@ -15,10 +15,16 @@ public:
 
 private:
 	// Default functions for rendering to the screen.
-
+	void spawnFood();
 	// Default variables for level class.
 	sf::CircleShape m_player;
+	sf::CircleShape m_food;
 	int m_speed = 200;
 	KeyState m_previousKey;
+	sf::Vector2f m_distance;
+	bool m_isGameOver = false;
+	int m_score;
+	int m_scoreGoal = 10;
+	float m_gameTime;
 
 };
